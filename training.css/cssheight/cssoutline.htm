@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p.main{
+        border: 2px solid black;
+        outline: green solid 10px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      div{outline-color: red;
+      margin: 40px;
+      }
+
+      div.dotted{outline-style: dotted;}
+      div.dashed{outline-style: dashed;}
+      div.double{outline-style: double;}
+      div.inset{outline-style: inset;}
+
+      p.ex1{
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: thin;
+      }
+
+      p.ex2{
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: medium;
+      }
+
+      p.ex3{
+        border: 1px solid black;
+        outline-style: dotted;
+        outline-color: yellow;
+        outline-width: thick;
+      }
+
+      p.ex4{
+        border: 1px solid black;
+        outline-style: dashed;
+        outline-color: blue;
+        outline-width: 4px;
+      }
+
+      p.ex5{
+        outline: 5px solid yellow;
+      }
+
+      p.ex6{
+        outline: thick ridge pink;
+      }
+
+      p.ex7{
+        margin: 30px;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="main">This element has a 2px black border ad a green outline with a width of 10px</p>
+
+    
+    <div class="dotted">A dotted outline</div>
+    <div class="dashed">A dashed outline</div>
+    <div class="double">A double outline</div>
+    <div class="inset">An inset outline</div>
+  
+    <p class="ex1">A thin outline</p>
+    <p class="ex2">A medium outline</p>
+    <p class="ex3">A thick outline</p>
+    <p class="ex4">A 4px thick outline</p>
+
+    <p class="ex5">A 5px solid yellow outline</p>
+    <p class="ex6">A thick ridge pink outline</p>
+
+    <p class="ex7">This paragraph has an outline 15px outside the border edge</p>
+  </body>
+</html>

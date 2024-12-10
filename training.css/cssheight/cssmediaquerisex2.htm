@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Container for flexboxes */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    /* Create four equal columns */
+    .column {
+      flex: 25%;
+      padding: 20px;
+    }
+    
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        flex: 50%;
+      }
+    }
+    
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .row {
+        flex-direction: column;
+        font-size: 30px;
+      }
+    }
+
+    div.example{
+      background-color: yellow;
+      padding: 20px;
+    }
+
+    @media screen and (max-width:600px) {
+      div.example{
+        display: none;
+      }
+    }
+    </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>Column 1</h2>
+      <p>Some text..</p>
+    </div>
+    
+    <div class="column" style="background-color:#bbb;">
+      <h2>Column 2</h2>
+      <p>Some text..</p>
+    </div>
+    
+    <div class="column" style="background-color:#ccc;">
+      <h2>Column 3</h2>
+      <p>Some text..</p>
+    </div>
+    
+    <div class="column" style="background-color:#ddd;">
+      <h2>Column 4</h2>
+      <p>Some text..</p>
+    </div>
+  </div>
+
+  <div class="example">
+    Example div
+  </div>
+</body>
+</html>

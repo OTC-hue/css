@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.men{
+        border: 2px solid red;
+        background-color: lightblue;
+        padding: 70px;
+      }
+
+      div.main{
+        border: 1px solid black;
+        padding-top:30px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        padding-left: 80px;
+        margin-top: 30px;
+      }
+      div.van{
+        border: 2px solid black;
+        padding: 40px 50px 30px 60px;
+        background-color: lightblue;
+        margin-top: 30px;
+      }
+
+      div.hen{
+        border: 2px solid blue;
+        padding: 30px 60px 40px;
+        margin-top: 30px;
+      }
+
+      div.ex1{
+        background-color: yellow;
+        width: 300px;
+      }
+
+      div.ex2{
+        background-color: lightblue;
+        width: 300px;
+        padding: 25px;
+      }
+
+      div.px1{
+        background-color: yellow;
+        width: 300px;
+      }
+
+      div.px2{
+        background-color: lightblue;
+        width: 300px;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="men">
+      <p>This div has a padding of 70px</p>
+    </div>
+
+    <div class="main">
+      <p>This div has a padding-top of 30px, a padding-right of 50px, a padding bottom of 60px and a padding left of 80px</p>
+    </div>
+    <div class="van">
+      <p>Thuis div has a padding-top of 40px, a padiing-right of 30px, a padding bottom of 50px, and a padding left of 60px</p>
+    </div>
+
+    <div class="hen">
+      <p>The div has a padding top of 30px, a padding right of 60px and a padding bottom of 40px</p>
+    </div>
+
+    <div class="ex1">
+      <p>This div has a width a 300px</p>
+    </div>
+
+    <div class="ex2">
+      <p>This width of this div is defined as 350px even though it is defined as 300px in the width sttribute</p>
+    </div>
+
+    <div class="px1">
+      <p>The width of this is 300px</p>
+    </div>
+
+    <div class="px2">
+      <p>The width of this div remains 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property</p>
+    </div> 
+
+  </body>
+</html>

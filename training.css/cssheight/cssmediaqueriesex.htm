@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      background-color: tan;
+      color: black;
+    }
+    
+    /* On screens that are 992px wide or less, the background color is blue */
+    @media screen and (max-width: 992px) {
+      body {
+        background-color: blue;
+        color: white;
+      }
+    }
+    
+    /* On screens that are 600px wide or less, the background color is olive */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: olive;
+        color: white;
+      }
+    }
+
+    .topnav{
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a{
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover{
+      background-color: #ddd;
+      color: black;
+    }
+
+    @media screen and (max-width:600px) {
+      .topnav a{
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+  <h1>Resize the browser window to see the effect!</h1>
+<p>By default, the background color of the document is "tan". If the screen size is 992px or less, the color will change to "blue". If it is 600px or less, it will change to "olive".</p>
+
+<h2>Responsive Navigation menu</h2>
+
+<div class="topnav">
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>

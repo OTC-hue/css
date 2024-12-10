@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .mask2{
+      -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+      mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    }
+
+    .mask3 {
+  -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="mask2">
+    <img src="cinque terre.jpg" alt="cinque" width="100%">
+  </div>
+
+  <div class="mask3">
+    <img src="paris.jpg" alt="paris" width="100%">
+  </div>
+
+  <svg width="600" height="400">
+    <mask id="svgmask1">
+      <polygon fill="#ffffff" points="200 0, 400 400, 0 400"></polygon>
+    </mask>
+    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+
+    h
+  </svg>
+</body>
+</html>

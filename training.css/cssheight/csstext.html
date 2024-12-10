@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        color: blue;
+        background-color: lightgray;
+      }
+
+        div{
+          border: 1px solid gray;
+          padding: 8px;
+          background-color: red;
+          width: 50%;
+          line-height: 9px;
+        }
+
+        h2{
+          text-align: center;
+          color: lightgreen;
+          text-transform: uppercase;
+          background-color: #000;
+        }
+
+        p{
+          text-indent: 50px;
+          text-align: justify;
+          letter-spacing: 3px;
+          text-align-last: center;
+
+        }
+
+        a{
+          text-decoration: none;
+          color: lightblue;
+        }
+
+        h1{
+          text-align: right;
+          text-decoration: underline;
+          text-decoration-color: green;
+          text-decoration-style: dashed;
+          text-decoration-thickness: auto;
+          text-shadow: 2px 2px 5px red;
+        }
+
+        h3{
+          text-align: left;
+          text-decoration: overline;
+          text-decoration-color: red;
+          text-decoration-style: double;
+          text-decoration-thickness: 5px;
+        }
+
+        p.ex1{
+          direction: rtl;
+          unicode-bidi: bidi-override;
+          text-decoration: overline underline;
+          text-decoration-color: yellow;
+          text-decoration-style: wavy;
+          text-decoration-thickness: 25%;
+        }
+
+        img.a{
+          vertical-align: baseline;
+        }
+
+        img.b{
+          vertical-align: text-top;
+ }
+
+ img.c{
+  vertical-align: text-bottom;
+ }
+
+    img.d{
+      vertical-align: super;
+    }
+
+    img.e{
+      vertical-align: sub;
+    }
+
+    h4{
+      text-decoration: underline red double;
+    }
+
+    p.upper{
+      text-transform: uppercase;
+    }
+
+    p.lower{
+      text-transform: lowercase;
+    }
+
+    p.capita{
+      text-transform: capitalize;
+      text-indent: 70px;
+      letter-spacing: -1px;
+    }
+
+    p.hint{
+      word-spacing: -8px;
+    }
+
+    h5{
+      text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    }
+    </style>
+  </head>
+
+  <body>
+    
+    <h2>text formatting</h2>
+    <div>
+    <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform and color properties. The paragraph is indented, aligned and the space between characters is specified. The underline is removed fro the link <a href="tryit.asp?filename=trycss_text">Try it tourself</a></p>
+      </div>
+
+      <h1>Heading (right)</h1>
+      <h3>Heading (center)</h3>
+      
+      <p class="ex1">This is a right to left text</p>
+      
+      <p>An image <img class="a" src="IMG-20240701-WA0044.jpg" alt="none" width="9" height="9"> with a default/baseline alignment</p>
+      <p>An image <img class="b" src="IMG-20240701-WA0044.jpg" alt="none"  width="9" height="9"> with a text-top alignment</p>
+      <p>An image <img class="c" src="IMG-20240701-WA0044.jpg" alt="" width="9" height="9">with a text bottom alignment</p>
+      <p>An image <img class="d" src="IMG-20240701-WA0044.jpg" alt="none" width="9" height="9">with a super alignment</p>
+      <p>An image <img class="e" src="IMG-20240701-WA0044.jpg" alt="none" width="9" height="9">with a sub alignment</p>
+
+      <h4>A Shorthand for text decoration</h4>
+
+      <p class="upper">an upper case text</p>
+      <p class="lower">A LOWER CASE TEXT</p>
+      <P class="capita">a capitalized text In my younger and more vulberablhvhhhvvvvvvvvvvvvvvvvvvvvvvvvve ye</P>
+    
+      <p class="hint">This paragraph is smaller in spacing</p>
+    
+      <h5>Text Shadow With red and blue neon glow</h5>
+    </body>
+</html>

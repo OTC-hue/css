@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  .con{
+    position: relative;
+  }
+
+  .blackbox{
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+  }
+
+  .graybox{
+    position: absolute;
+    z-index: 3;
+    background-color: lightgray;
+    height: 60px;
+    width: 70%;
+    left: 50px;
+    top: 50px;
+  }
+
+  .greenbox{
+    position: absolute;
+    width: 35%;
+    left: 380px;
+    top: -15px;
+    height: 100px;
+    background-color: lightgreen;
+  }
+</style>
+
+</head>
+<body>
+  <h1>This is a heading</h1>
+  <img src="IMG-20240701-WA0044.jpg" alt="cakes">
+  <p>Because the mage has z-indec of -1 <br> it will be placed behind</p>
+
+  <p>An elemnt with great stack order</p>
+
+  <div class="con">
+    <div class="blackbox">Black box (z-index=1)</div>
+    <div class="graybox">Graybox (z-index: 3)</div>
+    <div class="greenbox">greenbox (z-index: 2)</div>
+  </div>
+</body>
+</html>

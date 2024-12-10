@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.ex1{
+  background: orange;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.6;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.ex1:hover{
+  background-color: red;
+  opacity: 1;
+}
+
+.ex2{
+  position: relative;
+  background: green;
+  border: none;
+  color: white;
+  padding: 20px;
+  transition-duration: 0.4s;
+  text-align: center;
+  cursor: hidden;
+  overflow: hidden;
+  width: 200px;
+}
+
+.ex2::after{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.9s;
+  cursor: pointer;
+}
+
+.ex2:active::after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+  </style>
+</head>
+<body>
+  <button class="button">Click Me</button>
+
+  <button class="ex1">Hover Over Me</button>
+
+  <button class="ex2">Click ME</button>
+</body>
+</html>

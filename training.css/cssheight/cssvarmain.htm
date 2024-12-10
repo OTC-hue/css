@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+      --blue: #6495ed;;
+      --white: #ffffff;
+    }
+
+    body{
+      background-color: var(--blue);
+    }
+
+    .container{
+      --fontsize: 25px;
+    }
+    h2{
+      border-bottom: 2px solid var(--blue);
+    }
+
+    .container{
+      color: var(--blue);
+      background-color: var(--white);
+      padding: 15px;
+      font-size: var(--fontsize);
+    }
+
+    button{
+      --button-blue: #0000ff;
+      background-color: var(--white);
+      color: var(--button-blue);
+      border: 1px solid var(--button-blue);
+      padding: 5px;
+    }
+
+    @media screen and (min-width: 950px) {
+      .container{
+        --fontsize: 50px;
+      }
+      :root{
+        --blue: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Using the var() Function</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>
+    <button>Yes</button>
+    <button>No</button>
+  </p>
+</div>
+</body>
+</html>

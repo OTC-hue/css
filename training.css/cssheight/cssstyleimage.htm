@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    img.bar{
+      border-radius: 8px;
+      height: 200px;
+      width: 200px;
+    }
+
+    img.main{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+
+    img.sen{
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+      border: 1px solid #ddd;
+      opacity: 0.5;
+    }
+
+    img.hov{
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+      border: 1px solid #ddd;
+    }
+
+    img.hov:hover{
+      box-shadow: 0px 0px 2px 1px lightblue;
+    }
+
+    img.resp{
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    div.polariod{
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;      
+    }
+
+    img{
+      width: 100%;
+    }
+
+    div.container{
+      text-align: center;
+      padding: 10px 20px;
+    }
+
+    div.con{
+      position: relative;
+    }
+
+    .left{
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+
+    .right{
+      position: absolute;
+      top: 8px;
+      right: 16px;
+    }
+
+    .bttl{
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+
+    .bttr{
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+    }
+
+    .cen{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+  </style>
+</head>
+<body>
+  <img class="bar" src="paris.jpg" alt="paris">
+  <img class="main" src="paris.jpg" alt="paris">
+  <img class="sen" src="paris.jpg" alt="paris">
+ <a href="paris">
+  <img class="hov" src="paris.jpg" alt="paris"> <br>
+  </a>
+
+  <img class="resp" src="paris.jpg" alt="paris" style="width: 1000;" height="300" > <br>
+
+  
+    <div class="polariod">
+      <img src="cinque terre.jpg" alt="">
+    <div class="container">
+      <p>Cinque Terre</p>
+      </div>
+  </div>
+
+  <div class="polariod">
+    <img src="aurora.jpg" alt="light">
+    <div class="container">
+      <p>Nothern Lights</p>
+    </div>
+  </div>
+
+  <div class="con">
+    <img src="cinque terre.jpg" alt="" style="opacity: 0.3;">
+    <div class="left">Top Left</div>
+    <div class="right">Top right</div>
+    <div class="bttl">Bottom left</div>
+    <div class="bttr">Bottom right</div>
+    <div class="cen">Centered</div>
+
+    </div>
+</body>
+</html>
